@@ -34,6 +34,13 @@ Add a .env file in then root directory with the following
 Then run the following commands
 ```npm install```
 ```npm run dev```
-
+## File Structure
+- `src` - Contains all the source code of the project
+  - `controllers` - Contains all the controllers
+  - `models` - Contains all the models
+  - `routes` - Contains all the routes
+  - `middlewares` - Contains all the middlewares
+  - `utils` - Contains all the utility functions
+  - `app.ts` - Entry point to the application
 ## Collection
 The postman collection is available [here](https://api.postman.com/collections/15330712-be54d372-e026-47af-8e2e-e92fa80f6c86?access_key=PMAT-01H6AHM76R8SCDNEK7Q3SMKSB7)
