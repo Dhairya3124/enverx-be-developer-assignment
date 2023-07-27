@@ -13,6 +13,10 @@ export async function getPost(query: FilterQuery<PostDocument>) {
   // limit and offset are optional
   const limit = query.limit && parseInt(query.limit);
   const offset = query.offset && parseInt(query.offset);
+  const asc = query.asc && query.asc;
+  if(asc){
+    return Post.find().sort({createdAt: 1}).skip(offset).limit(limit).lean();
+  }
   return Post.find().skip(offset).limit(limit).lean();
 }
 

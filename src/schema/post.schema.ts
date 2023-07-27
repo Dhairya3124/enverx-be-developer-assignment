@@ -12,7 +12,8 @@ export const createPostschema = Joi.object({
 export const getPostschema = Joi.object({
   body: Joi.object({
     limit: Joi.number().optional(),
-    offset: Joi.number().optional()
+    offset: Joi.number().optional(),
+    asc: Joi.boolean().optional()
   })
 });
 
